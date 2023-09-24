@@ -91,5 +91,43 @@ Swift è un linguaggio di programmazione fortemente tipizzato, il che significa 
  Il linguaggio offre anche la possibilità di definire nuovi tipi di dati personalizzati utilizzando le strutture (`struct`) e le classi (`class`).
 
 
+### Esempio di struct 
+
+
+```swift
+// Definizione di una struttura chiamata "Person"
+struct Person {
+    var firstName: String
+    var lastName: String
+    var age: Int
+    
+    // Un metodo per stampare le informazioni della persona
+    func printInfo() {
+        print("Nome: \(firstName)")
+        print("Cognome: \(lastName)")
+        print("Età: \(age)")
+    }
+}
+
+// Creazione di un'istanza della struttura "Person"
+var person1 = Person(firstName: "Mario", lastName: "Rossi", age: 30)
+
+// Accesso alle proprietà della struttura e chiamata del metodo
+print("Nome: \(person1.firstName)")
+print("Cognome: \(person1.lastName)")
+print("Età: \(person1.age)")
+
+// Chiamata del metodo per stampare le informazioni
+person1.printInfo()
+```
+
+In questo esempio, abbiamo definito una struttura chiamata "Person" con tre proprietà: `firstName`, `lastName` e `age`. La struttura contiene anche un metodo chiamato `printInfo()` che stampa le informazioni della persona. Successivamente, abbiamo creato un'istanza della struttura `person1` e abbiamo acceduto alle sue proprietà e chiamato il metodo.
+
+Le strutture in Swift sono molto versatili e possono essere utilizzate per rappresentare dati e oggetti con proprietà e metodi. Sono molto simili alle classi, ma con alcune differenze chiave, ad esempio, sono tipi di valore (copiati quando assegnati o passati a funzioni) mentre le classi sono tipi di riferimento (passati per riferimento).
+
+
+
+
+
 
 
