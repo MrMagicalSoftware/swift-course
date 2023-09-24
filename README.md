@@ -177,6 +177,46 @@ In questo esempio, abbiamo definito la classe `Person` con tre proprietà: `firs
 Dopo la definizione della classe, abbiamo creato un'istanza di `Person` chiamata `person1` utilizzando l'inizializzatore di classe. Successivamente, abbiamo accesso alle proprietà dell'istanza e chiamato il metodo `printInfo()` per stampare le informazioni sulla persona.
 
 
+_______________________
+
+
+### Differenze principali tra Classi e Struct 
+
+
+
+Le classi e le strutture (`class` e `struct`) sono due costrutti chiave nel linguaggio di programmazione Swift, e ognuno di essi ha delle differenze significative che influenzano come vengono utilizzati. Ecco le principali differenze tra classi e strutture in Swift:
+
+1. **Tipo di valore vs. Tipo di riferimento**:
+   - **Strutture**: Le strutture sono tipi di valore. Ciò significa che quando assegni una struttura a una variabile o la passi a una funzione, viene effettuata una copia del valore sottostante. Le modifiche alla copia non influenzano l'originale.
+   - **Classi**: Le classi sono tipi di riferimento. Quando assegni una classe a una variabile o la passi a una funzione, stai trattando un riferimento all'istanza della classe. Le modifiche al riferimento influenzano l'istanza originale e tutte le variabili che condividono quel riferimento.
+
+2. **Inizializzatori**:
+   - **Strutture**: Le strutture forniscono automaticamente un inizializzatore membro che ti consente di creare un'istanza iniziale con tutte le proprietà inizializzate.
+   - **Classi**: Le classi richiedono la definizione esplicita di un inizializzatore di tipo `init` per inizializzare tutte le loro proprietà.
+
+3. **Ereditarietà**:
+   - **Strutture**: Le strutture non supportano l'ereditarietà. Non puoi creare una struttura che erediti da un'altra struttura.
+   - **Classi**: Le classi supportano l'ereditarietà. Puoi creare una classe che erediti da un'altra classe, consentendo la condivisione di comportamento e proprietà.
+
+4. **Deinizializzatori**:
+   - **Strutture**: Le strutture non consentono la definizione di deinizializzatori (`deinit`) poiché vengono deallocati automaticamente quando non sono più in uso.
+   - **Classi**: Le classi possono avere deinizializzatori per eseguire operazioni personalizzate quando un'istanza viene deallocata.
+
+5. **Copie e Condivisione**:
+   - **Strutture**: Le copie di strutture sono indipendenti e non condividono dati con l'originale. Questo può essere vantaggioso in situazioni in cui è necessaria una copia immutabile dei dati.
+   - **Classi**: Le istanze di classi condividono i dati quando vengono assegnate o passate a funzioni. Questo può essere vantaggioso quando si desidera mantenere un'unica istanza condivisa di dati.
+
+6. **Mutabilità**:
+   - **Strutture**: Le proprietà delle strutture sono di default immutabili (a meno che non siano contrassegnate come `var`). Devi dichiarare una struttura come `var` per modificarne le proprietà.
+   - **Classi**: Le proprietà delle classi sono di default mutabili (a meno che non siano contrassegnate come `let`). Puoi modificarle direttamente.
+
+In generale, dovresti scegliere tra classi e strutture in base alle tue esigenze specifiche. Usa strutture quando desideri copiare dati in modo indipendente e usale come tipi di valore immutabili. Usa classi quando vuoi condividere dati, sfruttare l'ereditarietà o eseguire operazioni personalizzate quando un'istanza viene deallocata. La scelta dipenderà dalla logica e dal design della tua applicazione.
+
+
+
+
+
+
 
 
 
