@@ -466,7 +466,6 @@ Swift offre una varietà di operatori che puoi utilizzare per eseguire operazion
 6. **Altri Operatori**:
    - `?:`: Operatore ternario condizionale.
    - `??`: Operatore di null coalescing.
-   - `...`: Operatore di chiamata di funzione.
    - `&`, `|`, `^`: Operatori bitwise (per manipolare i bit).
 
    Esempio:
@@ -476,6 +475,93 @@ Swift offre una varietà di operatori che puoi utilizzare per eseguire operazion
    let result = someValue ?? defaultValue
    let bitwiseResult = 0b101 & 0b110 // 0b100
    ```
+
+
+_______________________________________________________________
+
+
+
+
+## Manipolare le stringhe 
+
+
+La manipolazione delle stringhe è un'operazione comune nella programmazione, e Swift offre molte funzioni e metodi per lavorare con le stringhe. Ecco alcune delle operazioni più comuni per manipolare le stringhe in Swift:
+
+1. **Concatenazione di Stringhe**:
+   Per unire due o più stringhe, puoi utilizzare l'operatore `+` o il metodo `+` dell'istanza di stringa.
+
+   ```swift
+   let nome = "Alice"
+   let cognome = "Rossi"
+   let nomeCompleto = nome + " " + cognome
+   ```
+
+2. **Interpolazione di Stringhe**:
+   Puoi incorporare valori nelle stringhe utilizzando l'interpolazione di stringhe con il carattere `\()`. 
+
+   ```swift
+   let età = 30
+   let messaggio = "La mia età è \(età) anni."
+   ```
+
+3. **Ricerca e Sostituzione**:
+   Puoi cercare una sottostringa all'interno di una stringa e sostituirla utilizzando i metodi `range(of:)` e `replacingOccurrences(of:with:)`.
+
+   ```swift
+   let testo = "Ciao, mondo!"
+   if let range = testo.range(of: "mondo") {
+       let nuovoTesto = testo.replacingOccurrences(of: "mondo", with: "universo")
+   }
+   ```
+
+4. **Divisione delle Stringhe**:
+   Puoi dividere una stringa in sottostringhe utilizzando il metodo `split(separator:)`.
+
+   ```swift
+   let elenco = "mele, banane, arance"
+   let frutta = elenco.split(separator: ", ")
+   ```
+
+5. **Conversione di Maiuscole e Minuscole**:
+   Puoi convertire una stringa in maiuscolo o minuscolo utilizzando i metodi `uppercased()` e `lowercased()`.
+
+   ```swift
+   let testo = "Hello, World!"
+   let maiuscolo = testo.uppercased()
+   let minuscolo = testo.lowercased()
+   ```
+
+6. **Rimozione degli Spazi Bianchi**:
+   Puoi rimuovere gli spazi bianchi in eccesso all'inizio e alla fine di una stringa utilizzando il metodo `trimmingCharacters(in:)`.
+
+   ```swift
+   let testo = "    Ciao, mondo!    "
+   let pulito = testo.trimmingCharacters(in: .whitespacesAndNewlines)
+   ```
+
+7. **Verifica della Lunghezza della Stringa**:
+   Puoi ottenere la lunghezza di una stringa utilizzando la proprietà `count`.
+
+   ```swift
+   let testo = "Ciao, mondo!"
+   let lunghezza = testo.count // Restituisce 12
+   ```
+
+8. **Estrazione di Sottostringhe**:
+   Puoi estrarre una sottostringa da una stringa utilizzando il metodo `prefix(_:)` o `suffix(_:)`.
+
+   ```swift
+   let testo = "Ciao, mondo!"
+   let prefisso = testo.prefix(4) // "Ciao"
+   let suffisso = testo.suffix(6) // "mondo!"
+   ```
+
+
+
+
+
+
+   
 
 
 
