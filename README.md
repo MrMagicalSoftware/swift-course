@@ -3,6 +3,8 @@
 Documentazione :
 https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/
 
+https://www.javatpoint.com/swift-syntax
+
 ## Programma
 
 
