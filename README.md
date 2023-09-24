@@ -129,6 +129,55 @@ In questo esempio, abbiamo definito una struttura chiamata "Person" con tre prop
 Le strutture in Swift sono molto versatili e possono essere utilizzate per rappresentare dati e oggetti con proprietà e metodi. Sono molto simili alle classi, ma con alcune differenze chiave, ad esempio, sono tipi di valore (copiati quando assegnati o passati a funzioni) mentre le classi sono tipi di riferimento (passati per riferimento).
 
 
+_________________________________________________________________________________________________
+
+
+### Esempio di classe in swift
+
+Le classi sono utilizzate per definire oggetti complessi con proprietà e comportamenti associati. Puoi creare molte istanze diverse della stessa classe, ognuna con i propri dati.
+
+
+```swift
+// Definizione della classe "Person"
+class Person {
+    // Proprietà della classe
+    var firstName: String
+    var lastName: String
+    var age: Int
+    
+    // Inizializzatore di classe
+    init(firstName: String, lastName: String, age: Int) {
+        self.firstName = firstName
+        self.lastName = lastName
+        self.age = age
+    }
+    
+    // Metodo di istanza per stampare le informazioni della persona
+    func printInfo() {
+        print("Nome: \(firstName)")
+        print("Cognome: \(lastName)")
+        print("Età: \(age)")
+    }
+}
+
+// Creazione di un'istanza della classe "Person"
+let person1 = Person(firstName: "Mario", lastName: "Rossi", age: 30)
+
+// Accesso alle proprietà e chiamata del metodo
+print("Nome: \(person1.firstName)")
+print("Cognome: \(person1.lastName)")
+print("Età: \(person1.age)")
+
+// Chiamata del metodo per stampare le informazioni
+person1.printInfo()
+```
+
+In questo esempio, abbiamo definito la classe `Person` con tre proprietà: `firstName`, `lastName` e `age`. Abbiamo anche creato un inizializzatore di classe (`init`) per inizializzare le proprietà quando viene creata un'istanza della classe.
+
+Dopo la definizione della classe, abbiamo creato un'istanza di `Person` chiamata `person1` utilizzando l'inizializzatore di classe. Successivamente, abbiamo accesso alle proprietà dell'istanza e chiamato il metodo `printInfo()` per stampare le informazioni sulla persona.
+
+
+
 
 
 
