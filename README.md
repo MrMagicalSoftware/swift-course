@@ -352,6 +352,46 @@ In questo esempio, abbiamo definito un type alias `Punto` per rappresentare copp
 
 Il type alias è particolarmente utile quando si lavora con tipi di dati complessi, come chiusure (`closure`), tipi di collezioni personalizzate o tipi di dati personalizzati definiti dall'utente, poiché può semplificare la sintassi e migliorare la comprensione del codice.
 
+## Numeri in swift 
+
+I numeri in Swift sono gestiti attraverso vari tipi di dati, e possono essere suddivisi in tre categorie principali:
+
+1. **Numeri Interi (Integers)**: Rappresentano valori interi senza parte frazionaria. Ecco alcuni dei tipi di dati per i numeri interi in Swift:
+
+   - `Int`: Questo è il tipo principale per i numeri interi e dipende dalla piattaforma (32 o 64 bit).
+   - `Int8`, `Int16`, `Int32`, `Int64`: Questi sono tipi di numeri interi con dimensioni specifiche.
+   - `UInt`: Rappresenta numeri interi senza segno.
+   - `UInt8`, `UInt16`, `UInt32`, `UInt64`: Sono tipi di numeri interi senza segno con dimensioni specifiche.
+
+   Esempio:
+   ```swift
+   let intValue: Int = 42
+   let uintValue: UInt = 10
+   ```
+
+2. **Numeri in Virgola Mobile (Floating-Point Numbers)**: Rappresentano numeri decimali, inclusi quelli con parte frazionaria. I principali tipi di dati per i numeri in virgola mobile sono:
+
+   - `Double`: Doppia precisione, adatto per la maggior parte dei calcoli con numeri decimali.
+   - `Float`: Singola precisione, utilizzato quando è necessaria una maggiore efficienza in termini di memoria.
+
+   Esempio:
+   ```swift
+   let doubleValue: Double = 3.14159
+   let floatValue: Float = 2.71828
+   ```
+
+3. **Conversioni tra Tipi di Dati Numerici**: È possibile convertire tra diversi tipi numerici in Swift utilizzando operazioni di casting. Ad esempio, è possibile convertire un `Int` in un `Double` o viceversa.
+
+   Esempio:
+   ```swift
+   let intValue: Int = 42
+   let doubleValue: Double = Double(intValue) // Conversione da Int a Double
+   let intFromDouble: Int = Int(doubleValue) // Conversione da Double a Int
+   ```
+
+È importante prestare attenzione alle conversioni tra tipi numerici, in quanto possono comportare la perdita di dati o errori se non gestite correttamente. Swift richiede conversioni esplicite per evitare sorprese indesiderate durante l'esecuzione del codice.
+
+
 
 
 
