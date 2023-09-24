@@ -312,9 +312,45 @@ Le classi e le strutture (`class` e `struct`) sono due costrutti chiave nel ling
 6. **Mutabilità**:
    - **Strutture**: Le proprietà delle strutture sono di default immutabili (a meno che non siano contrassegnate come `var`). Devi dichiarare una struttura come `var` per modificarne le proprietà.
    - **Classi**: Le proprietà delle classi sono di default mutabili (a meno che non siano contrassegnate come `let`). Puoi modificarle direttamente.
+  
+
+## type alias
 
 
 
+In Swift, un type alias (alias di tipo) è un modo per assegnare un nome alternativo a un tipo di dato esistente. Questo può rendere il codice più leggibile e manutenibile, specialmente quando si lavora con tipi di dati complessi o lunghi. Un type alias non crea un nuovo tipo di dato; invece, fornisce solo un nome più breve o descrittivo per il tipo esistente.
+
+Ecco la sintassi per definire un type alias in Swift:
+
+```swift
+typealias NomeAlias = TipoOriginale
+```
+
+Dove:
+- `NomeAlias` è il nome che stai assegnando al tipo originale.
+- `TipoOriginale` è il tipo di dato esistente a cui stai assegnando un nome alternativo.
+
+Ecco un esempio per comprendere meglio come funziona:
+
+```swift
+typealias Punto = (Double, Double)
+
+let puntoA: Punto = (3.0, 4.0)
+let puntoB: Punto = (1.5, 2.5)
+
+func calcolaDistanza(_ da: Punto, _ a: Punto) -> Double {
+    let deltaX = a.0 - da.0
+    let deltaY = a.1 - da.1
+    return sqrt(deltaX * deltaX + deltaY * deltaY)
+}
+
+let distanza = calcolaDistanza(puntoA, puntoB)
+print("La distanza tra puntoA e puntoB è \(distanza)")
+```
+
+In questo esempio, abbiamo definito un type alias `Punto` per rappresentare coppie di coordinate `(Double, Double)` che rappresentano punti nello spazio bidimensionale. Utilizzando `Punto` come alias, il codice diventa più leggibile quando dichiariamo variabili, definiamo funzioni e passiamo argomenti.
+
+Il type alias è particolarmente utile quando si lavora con tipi di dati complessi, come chiusure (`closure`), tipi di collezioni personalizzate o tipi di dati personalizzati definiti dall'utente, poiché può semplificare la sintassi e migliorare la comprensione del codice.
 
 
 
