@@ -3,6 +3,108 @@
 Documentazione :
 https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/
 
+## Programma
+
+GIORNO 1
+ Introduzione
+ Guida all’ Apple Developer Program
+ Installazione Plugins, Code Snippets e File Templates
+ Creare un progetto con playground e configurare l&#39;editor
+ Intro alla sintassi di swift
+ Le basi della Programmazione ad Oggetti
+ Progettare le Classi
+ Architetture
+ Le basi del linguaggio Swift (Parte 1)
+ I Tipi fondamentali
+ Le Variabili
+ Le costsanti
+ Type-Interface
+ Type Alias
+ I Numeri e le conversioni
+ Gli Operatori
+ Manipolare le stringhe
+
+GIORNO 2
+ Le basi del linguaggio Swift (Parte 2)
+ I tipi collezione
+ Tuple
+ Array
+ Set
+ Dictionary
+ Il Control Flow (if/if Else/For-In etc.)
+ Gli Optional-Type
+ Le Funzioni in Swift
+ Introduzione alle funzioni
+ Funzioni e Scope
+ Funzioni e Parametri
+ I Tipi funzione
+ Funzioni Annidate
+
+
+ Le Closure
+ Le funzioni Globali
+ Costrutti Swift
+ L&#39;enumerazione
+ Gli Struct
+ Le Classi
+ Proprietà Swift
+ Stored Property
+ Computed Property
+ Readonly Property
+ Lazy Property
+ Property Observers
+ Aspetti Avanzati Swift
+ Protocol
+ Generics
+ Extension
+ Error Handling
+
+GIORNO 3
+ Sviluppo Interfacce
+ Progettare e implementare UX avanzate
+ L&#39;App Store, pubblicazione/aggiornamemto App e TestFlight
+ Sviluppare Interfacce
+ Cos&#39;è la UI/UX
+ Le interfacce User Firendly
+ La User Experience
+ Le interfacce NUI
+ Historical Timeline
+ Xib e Storyboard Vs SwiftUI
+ Sviluppare Interfacce con UIKit via Storyboard:
+ Come funziona un’App con UIKit
+ Sviluppare Interfacce con SwiftUI
+ SwiftUI
+ Introduzione
+ Come funziona un’App con SwiftUI
+ L&#39;App Delegate e SceneDelegete in SwiftUI
+ Struttura dei progetti
+ SwiftUI basics (concetto alla base del sistema)
+
+
+GIORNO 4
+ Core Data
+ Core Data: introduzione ai Database
+ Core Data: database in locale + sync con CloudKit
+ SQLite: database in locale
+ Cosa sono i Web-Services
+ SOAP Web Services
+ Restful Web Services
+ Networking e JSON: Introduzione e formato JSON
+ Networking e JSON: Introduzione ai BaaS
+ Networking e JSON: Tutorial (scaricare ed interp. un JSON)
+ Tecniche di Debug
+ Tecniche di Debug
+ Memory Graph debugging
+ Thread Sanitizer
+ Main Thread Checker
+ View debugging
+ Testare l’App con il Testing e UI Testing
+
+GIORNO 5
+ LAB: Sviluppare un&#39;applicazione iOS con Swift con integrazione Servizi Rest
+
+
+
 # Creare un nuovo workspace
 
 
