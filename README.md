@@ -392,8 +392,90 @@ I numeri in Swift sono gestiti attraverso vari tipi di dati, e possono essere su
 È importante prestare attenzione alle conversioni tra tipi numerici, in quanto possono comportare la perdita di dati o errori se non gestite correttamente. Swift richiede conversioni esplicite per evitare sorprese indesiderate durante l'esecuzione del codice.
 
 
+_______________________________________________________________
+
+## Operatori in swift
 
 
+Swift offre una varietà di operatori che puoi utilizzare per eseguire operazioni matematiche, confronti e altre azioni. Ecco una panoramica degli operatori principali in Swift:
+
+1. **Operatori Aritmetici**:
+   - `+`: Addizione.
+   - `-`: Sottrazione.
+   - `*`: Moltiplicazione.
+   - `/`: Divisione.
+   - `%`: Resto della divisione (modulo).
+
+   Esempio:
+   ```swift
+   let somma = 5 + 3 // 8
+   let differenza = 10 - 4 // 6
+   let prodotto = 6 * 2 // 12
+   let divisione = 8 / 4 // 2
+   let resto = 10 % 3 // 1
+   ```
+
+2. **Operatori di Assegnazione**:
+   - `=`: Assegna un valore a una variabile o costante.
+   - `+=`, `-=`, `*=`, `/=`, `%=`: Eseguono un'operazione e assegnano il risultato alla variabile.
+
+   Esempio:
+   ```swift
+   var x = 5
+   x += 3 // x diventa 8
+   ```
+
+3. **Operatori di Confronto**:
+   - `==`: Uguale a.
+   - `!=`: Diverso da.
+   - `<`: Minore di.
+   - `<=`: Minore o uguale a.
+   - `>`: Maggiore di.
+   - `>=`: Maggiore o uguale a.
+
+   Esempio:
+   ```swift
+   let a = 10
+   let b = 5
+   let isEqual = a == b // false
+   let isGreaterThan = a > b // true
+   ```
+
+4. **Operatori Logici**:
+   - `&&`: AND logico.
+   - `||`: OR logico.
+   - `!`: NOT logico.
+
+   Esempio:
+   ```swift
+   let condition1 = true
+   let condition2 = false
+   let result = condition1 && condition2 // false
+   ```
+
+5. **Operatori di Intervallo**:
+   - `...`: Intervallo chiuso (include entrambi gli estremi).
+   - `..<`: Intervallo semichiuso (include il primo estremo ma esclude il secondo).
+
+   Esempio:
+   ```swift
+   let range1 = 1...5 // Contiene 1, 2, 3, 4, 5
+   let range2 = 0..<3 // Contiene 0, 1, 2
+   ```
+
+6. **Altri Operatori**:
+   - `?:`: Operatore ternario condizionale.
+   - `??`: Operatore di null coalescing.
+   - `...`: Operatore di chiamata di funzione.
+   - `&`, `|`, `^`: Operatori bitwise (per manipolare i bit).
+
+   Esempio:
+   ```swift
+   let condition = true
+   let value = condition ? "Vero" : "Falso"
+   let result = someValue ?? defaultValue
+   let bitwiseResult = 0b101 & 0b110 // 0b100
+   ```
 
 
 
