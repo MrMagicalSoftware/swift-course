@@ -1,5 +1,8 @@
 # swift-course
 
+Documentazione :
+https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/
+
 # Creare un nuovo workspace
 
 
