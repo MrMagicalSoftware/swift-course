@@ -182,6 +182,7 @@ _______________________
 
 ### Differenze principali tra Classi e Struct 
 
+In generale, dovresti scegliere tra classi e strutture in base alle tue esigenze specifiche. Usa strutture quando desideri copiare dati in modo indipendente e usale come tipi di valore immutabili. Usa classi quando vuoi condividere dati, sfruttare l'ereditarietà o eseguire operazioni personalizzate quando un'istanza viene deallocata. La scelta dipenderà dalla logica e dal design della tua applicazione.
 
 
 Le classi e le strutture (`class` e `struct`) sono due costrutti chiave nel linguaggio di programmazione Swift, e ognuno di essi ha delle differenze significative che influenzano come vengono utilizzati. Ecco le principali differenze tra classi e strutture in Swift:
@@ -210,7 +211,6 @@ Le classi e le strutture (`class` e `struct`) sono due costrutti chiave nel ling
    - **Strutture**: Le proprietà delle strutture sono di default immutabili (a meno che non siano contrassegnate come `var`). Devi dichiarare una struttura come `var` per modificarne le proprietà.
    - **Classi**: Le proprietà delle classi sono di default mutabili (a meno che non siano contrassegnate come `let`). Puoi modificarle direttamente.
 
-In generale, dovresti scegliere tra classi e strutture in base alle tue esigenze specifiche. Usa strutture quando desideri copiare dati in modo indipendente e usale come tipi di valore immutabili. Usa classi quando vuoi condividere dati, sfruttare l'ereditarietà o eseguire operazioni personalizzate quando un'istanza viene deallocata. La scelta dipenderà dalla logica e dal design della tua applicazione.
 
 
 
