@@ -32,80 +32,83 @@ Gli Operatori
 Manipolare le stringhe
 
 GIORNO 2
+
+
 Le basi del linguaggio Swift (Parte 2)
-I tipi collezione
-Tuple
-Array
-Set
-Dictionary
-Il Control Flow (if/if Else/For-In etc.)
-Gli Optional-Type
-Le Funzioni in Swift
-Introduzione alle funzioni
-Funzioni e Scope
-Funzioni e Parametri
-I Tipi funzione
-Funzioni Annidate
+I tipi collezione<br>
+Tuple<br>
+Array<br>
+Set<br>
+Dictionary<br>
+Il Control Flow (if/if Else/For-In etc.)<br>
+Gli Optional-Type<br>
+Le Funzioni in Swift<br>
+Introduzione alle funzioni<br>
+Funzioni e Scope<br>
+Funzioni e Parametri<br>
+I Tipi funzione<br>
+Funzioni Annidate<br>
 
 
-Le Closure
+Le Closure<br>
 Le funzioni Globali
 Costrutti Swift
 L&#39;enumerazione
 Gli Struct
 Le Classi
-Proprietà Swift
-Stored Property
-Computed Property
-Readonly Property
-Lazy Property
-Property Observers
-Aspetti Avanzati Swift
-Protocol
-Generics
-Extension
-Error Handling
+Proprietà Swift<br>
+Stored Property<br>
+Computed Property<br>
+Readonly Property<br>
+Lazy Property<br>
+Property Observers<br>
+Aspetti Avanzati Swift<br>
+Protocol<br>
+Generics<br>
+Extension<br>
+Error Handling<br>
 
 GIORNO 3
- Sviluppo Interfacce
- Progettare e implementare UX avanzate
- L&#39;App Store, pubblicazione/aggiornamemto App e TestFlight
- Sviluppare Interfacce
- Cos&#39;è la UI/UX
- Le interfacce User Firendly
- La User Experience
- Le interfacce NUI
- Historical Timeline
- Xib e Storyboard Vs SwiftUI
- Sviluppare Interfacce con UIKit via Storyboard:
- Come funziona un’App con UIKit
- Sviluppare Interfacce con SwiftUI
- SwiftUI
- Introduzione
- Come funziona un’App con SwiftUI
- L&#39;App Delegate e SceneDelegete in SwiftUI
+
+Sviluppo Interfacce
+Progettare e implementare UX avanzate
+L&#39;App Store, pubblicazione/aggiornamemto App e TestFlight
+Sviluppare Interfacce
+Cos&#39;è la UI/UX
+Le interfacce User Firendly
+La User Experience
+Le interfacce NUI
+Historical Timeline
+Xib e Storyboard Vs SwiftUI
+Sviluppare Interfacce con UIKit via Storyboard:
+Come funziona un’App con UIKit
+Sviluppare Interfacce con SwiftUI SwiftUI
+Introduzione
+Come funziona un’App con SwiftUI
+L&#39;App Delegate e SceneDelegete in SwiftUI
 Struttura dei progetti
 SwiftUI basics (concetto alla base del sistema)
 
 
 GIORNO 4
- Core Data
- Core Data: introduzione ai Database
- Core Data: database in locale + sync con CloudKit
- SQLite: database in locale
- Cosa sono i Web-Services
- SOAP Web Services
- Restful Web Services
- Networking e JSON: Introduzione e formato JSON
- Networking e JSON: Introduzione ai BaaS
- Networking e JSON: Tutorial (scaricare ed interp. un JSON)
- Tecniche di Debug
- Tecniche di Debug
- Memory Graph debugging
- Thread Sanitizer
- Main Thread Checker
- View debugging
- Testare l’App con il Testing e UI Testing
+
+Core Data
+Core Data: introduzione ai Database
+Core Data: database in locale + sync con CloudKit
+SQLite: database in locale
+Cosa sono i Web-Services
+SOAP Web Services
+Restful Web Services
+Networking e JSON: Introduzione e formato JSON
+Networking e JSON: Introduzione ai BaaS
+Networking e JSON: Tutorial (scaricare ed interp. un JSON)
+Tecniche di Debug
+Tecniche di Debug
+Memory Graph debugging
+Thread Sanitizer
+Main Thread Checker
+View debugging
+Testare l’App con il Testing e UI Testing
 
 GIORNO 5
  LAB: Sviluppare un&#39;applicazione iOS con Swift con integrazione Servizi Rest
