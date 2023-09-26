@@ -569,7 +569,7 @@ La manipolazione delle stringhe è un'operazione comune nella programmazione, e 
 
 ## Esempio di classe
 
-
+```
 class Person {
     // Proprietà private
     private var firstName: String
@@ -616,7 +616,7 @@ person.setAge(newAge: 35)
 // Ottenere l'età aggiornata
 let updatedAge = person.getAge()
 print("Età: \(updatedAge)") // Stampa: "Età: 35"
-
+```
 
 
 ## modificatori di accesso delle classi 
@@ -638,7 +638,7 @@ Esistono sono quattro modificatori di accesso che puoi utilizzare per controllar
 In questo esempio, `publicProperty` e `publicMethod` sono accessibili da qualsiasi parte del codice, `internalProperty` e `internalMethod` sono accessibili solo all'interno dello stesso modulo, `fileprivateProperty` e `fileprivateMethod` sono accessibili solo all'interno dello stesso file e `privateProperty` e `privateMethod` sono accessibili solo all'interno della stessa classe `MyClass`.
 
 
-```swift
+```
 public class MyClass {
     public var publicProperty: Int = 0
     internal var internalProperty: String = ""
