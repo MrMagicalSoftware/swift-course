@@ -489,6 +489,9 @@ _______________________________________________________________
 
 
 
+
+
+
 ## Manipolare le stringhe 
 
 
@@ -562,6 +565,58 @@ La manipolazione delle stringhe è un'operazione comune nella programmazione, e 
    let prefisso = testo.prefix(4) // "Ciao"
    let suffisso = testo.suffix(6) // "mondo!"
    ```
+
+
+## Esempio di classe
+
+
+class Person {
+    // Proprietà private
+    private var firstName: String
+    private var lastName: String
+    private var age: Int
+    
+    // Costruttore
+    init(firstName: String, lastName: String, age: Int) {
+        self.firstName = firstName
+        self.lastName = lastName
+        self.age = age
+    }
+    
+    // Metodo per ottenere il nome completo
+    func getFullName() -> String {
+        return "\(firstName) \(lastName)"
+    }
+    
+    // Metodo per impostare l'età
+    func setAge(newAge: Int) {
+        if newAge >= 0 {
+            age = newAge
+        } else {
+            print("L'età non può essere negativa")
+        }
+    }
+    
+    // Metodo per ottenere l'età
+    func getAge() -> Int {
+        return age
+    }
+}
+
+// Creazione di un'istanza della classe
+let person = Person(firstName: "Alice", lastName: "Smith", age: 30)
+
+// Ottenere il nome completo
+let fullName = person.getFullName()
+print("Nome completo: \(fullName)") // Stampa: "Nome completo: Alice Smith"
+
+// Impostare una nuova età
+person.setAge(newAge: 35)
+
+// Ottenere l'età aggiornata
+let updatedAge = person.getAge()
+print("Età: \(updatedAge)") // Stampa: "Età: 35"
+
 
 
 ## modificatori di accesso delle classi 
