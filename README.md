@@ -13,58 +13,58 @@ https://www.tutorialspoint.com/swift/index.htm
 
 
 GIORNO 1
- Introduzione
- Guida all’ Apple Developer Program
- Installazione Plugins, Code Snippets e File Templates
- Creare un progetto con playground e configurare l&#39;editor
- Intro alla sintassi di swift
- Le basi della Programmazione ad Oggetti
- Progettare le Classi
- Architetture
- Le basi del linguaggio Swift (Parte 1)
- I Tipi fondamentali
- Le Variabili
- Le costsanti
- Type-Interface
- Type Alias
- I Numeri e le conversioni
- Gli Operatori
- Manipolare le stringhe
+Introduzione
+Guida all’ Apple Developer Program
+Installazione Plugins, Code Snippets e File Templates
+Creare un progetto con playground e configurare l&#39;editor
+Intro alla sintassi di swift
+Le basi della Programmazione ad Oggetti
+Progettare le Classi
+Architetture
+Le basi del linguaggio Swift (Parte 1)
+I Tipi fondamentali
+Le Variabili
+Le costsanti
+Type-Interface
+Type Alias
+I Numeri e le conversioni
+Gli Operatori
+Manipolare le stringhe
 
 GIORNO 2
- Le basi del linguaggio Swift (Parte 2)
- I tipi collezione
- Tuple
- Array
- Set
- Dictionary
- Il Control Flow (if/if Else/For-In etc.)
- Gli Optional-Type
- Le Funzioni in Swift
- Introduzione alle funzioni
- Funzioni e Scope
- Funzioni e Parametri
- I Tipi funzione
- Funzioni Annidate
+Le basi del linguaggio Swift (Parte 2)
+I tipi collezione
+Tuple
+Array
+Set
+Dictionary
+Il Control Flow (if/if Else/For-In etc.)
+Gli Optional-Type
+Le Funzioni in Swift
+Introduzione alle funzioni
+Funzioni e Scope
+Funzioni e Parametri
+I Tipi funzione
+Funzioni Annidate
 
 
- Le Closure
- Le funzioni Globali
- Costrutti Swift
- L&#39;enumerazione
- Gli Struct
- Le Classi
- Proprietà Swift
- Stored Property
- Computed Property
- Readonly Property
- Lazy Property
- Property Observers
- Aspetti Avanzati Swift
- Protocol
- Generics
- Extension
- Error Handling
+Le Closure
+Le funzioni Globali
+Costrutti Swift
+L&#39;enumerazione
+Gli Struct
+Le Classi
+Proprietà Swift
+Stored Property
+Computed Property
+Readonly Property
+Lazy Property
+Property Observers
+Aspetti Avanzati Swift
+Protocol
+Generics
+Extension
+Error Handling
 
 GIORNO 3
  Sviluppo Interfacce
@@ -84,8 +84,8 @@ GIORNO 3
  Introduzione
  Come funziona un’App con SwiftUI
  L&#39;App Delegate e SceneDelegete in SwiftUI
- Struttura dei progetti
- SwiftUI basics (concetto alla base del sistema)
+Struttura dei progetti
+SwiftUI basics (concetto alla base del sistema)
 
 
 GIORNO 4
