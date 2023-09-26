@@ -657,7 +657,38 @@ public class MyClass {
 ```
 
 
+## Operatori ? e !
 
+ `!` e `?` sono due operatori che vengono utilizzati per gestire l'opzionalità dei valori. Gli optional consentono di rappresentare valori che possono essere presenti o assenti, evitando così i problemi di valore nullo (null) che possono portare a errori in molti altri linguaggi di programmazione.
+
+1. `!` (Forzare il disimballaggio di un optional):
+   - Quando si dichiara una variabile o una costante come optional (aggiungendo `?` dopo il tipo), il suo valore è automaticamente impostato su `nil`, il che indica che il valore è assente.
+   - Per accedere al valore effettivo all'interno di un optional, puoi utilizzare l'operatore `!` per forzare il disimballaggio dell'optional. Tuttavia, è necessario fare attenzione, perché se l'optional è `nil` e provi a forzare il disimballaggio, si verificherà un errore di runtime.
+   - Esempio:
+
+   ```swift
+   var optionalValue: Int? = 42
+   let unwrappedValue = optionalValue! // Forza il disimballaggio, ma potrebbe causare un errore se optionalValue è nil
+   ```
+
+2. `?` (Optional chaining):
+   - L'operatore `?` è utilizzato per effettuare la cosiddetta "catena di opzionali". Puoi utilizzarlo quando vuoi accedere a una proprietà, a un metodo o a un sotto-oggetto di un optional senza forzare il disimballaggio.
+   - Se l'optional è `nil`, l'intera catena di operazioni viene ignorata e viene restituito `nil`. Se l'optional contiene un valore, la catena di operazioni verrà eseguita normalmente.
+   - Esempio:
+
+   ```swift
+   class Person {
+       var name: String
+       init(name: String) {
+           self.name = name
+       }
+   }
+
+   var person: Person? = Person(name: "Alice")
+   let personName = person?.name // Utilizza l'optional chaining per accedere al nome, restituirà nil se person è nil
+   ```
+
+L'uso corretto di `!` e `?` è essenziale per gestire gli optional in modo sicuro e prevenire errori di runtime dovuti all'accesso a valori `nil`. È importante fare attenzione quando si utilizza `!` per forzare il disimballaggio, poiché può comportare problemi se l'optional è effettivamente `nil`.
 
 
 
