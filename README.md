@@ -13,17 +13,17 @@ https://www.tutorialspoint.com/swift/index.htm
 
 
 GIORNO 1
-Introduzione
-Guida all’ Apple Developer Program
-Installazione Plugins, Code Snippets e File Templates
-Creare un progetto con playground e configurare l&#39;editor
-Intro alla sintassi di swift
-Le basi della Programmazione ad Oggetti
-Progettare le Classi
-Architetture
-Le basi del linguaggio Swift (Parte 1)
-I Tipi fondamentali
-Le Variabili
+Introduzione <br>
+Guida all’ Apple Developer Program <br>
+Installazione Plugins, Code Snippets e File Templates <br>
+Creare un progetto con playground e configurare l&#39;editor <br>
+Intro alla sintassi di swift<br>
+Le basi della Programmazione ad Oggetti<br>
+Progettare le Classi<br>
+Architetture<br>
+Le basi del linguaggio Swift (Parte 1)<br>
+I Tipi fondamentali<br>
+Le Variabili<br>
 Le costsanti
 Type-Interface
 Type Alias
