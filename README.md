@@ -564,6 +564,43 @@ La manipolazione delle stringhe è un'operazione comune nella programmazione, e 
    ```
 
 
+## modificatori di accesso delle classi 
+
+
+Esistono sono quattro modificatori di accesso che puoi utilizzare per controllare l'accesso alle classi, alle proprietà, ai metodi e ad altre entità all'interno del tuo codice. Questi modificatori ti consentono di determinare quali parti del tuo codice possono accedere a determinate entità e quali non possono. Ecco i quattro modificatori di accesso in Swift:
+
+
+
+1. `public`: Il più alto livello di accesso. Le entità contrassegnate come pubbliche sono accessibili da qualsiasi parte del tuo codice e da moduli esterni. Questo è spesso utilizzato per le API pubbliche di un framework o di una libreria.
+
+2. `internal`: Questo è l'accesso predefinito quando non viene specificato alcun modificatore di accesso. Le entità contrassegnate come interne sono accessibili solo all'interno dello stesso modulo (cioè dello stesso progetto o framework).
+
+3. `fileprivate`: Questo modificatore limita l'accesso alle entità all'interno dello stesso file in cui sono definite. È utile per nascondere dettagli di implementazione all'interno di un file.
+
+4. `private`: Questo è il livello di accesso più restrittivo. Le entità contrassegnate come private sono accessibili solo all'interno della stessa classe o struttura in cui sono definite. È utile per nascondere dettagli di implementazione all'interno di un tipo.
+
+
+In questo esempio, `publicProperty` e `publicMethod` sono accessibili da qualsiasi parte del codice, `internalProperty` e `internalMethod` sono accessibili solo all'interno dello stesso modulo, `fileprivateProperty` e `fileprivateMethod` sono accessibili solo all'interno dello stesso file e `privateProperty` e `privateMethod` sono accessibili solo all'interno della stessa classe `MyClass`.
+
+
+```swift
+public class MyClass {
+    public var publicProperty: Int = 0
+    internal var internalProperty: String = ""
+    fileprivate var fileprivateProperty: Double = 0.0
+    private var privateProperty: Bool = false
+
+    public init() { }
+    
+    public func publicMethod() { }
+    internal func internalMethod() { }
+    fileprivate func fileprivateMethod() { }
+    private func privateMethod() { }
+}
+```
+
+
+
 
 
 
