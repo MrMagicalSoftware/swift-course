@@ -659,6 +659,9 @@ public class MyClass {
 
 ## Operatori ? e !
 
+
+https://docs.swift.org/swift-book/documentation/the-swift-programming-language/optionalchaining
+
  `!` e `?` sono due operatori che vengono utilizzati per gestire l'opzionalità dei valori. Gli optional consentono di rappresentare valori che possono essere presenti o assenti, evitando così i problemi di valore nullo (null) che possono portare a errori in molti altri linguaggi di programmazione.
 
 1. `!` (Forzare il disimballaggio di un optional):
