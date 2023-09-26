@@ -70,48 +70,47 @@ Error Handling<br>
 
 GIORNO 3
 
-Sviluppo Interfacce
-Progettare e implementare UX avanzate
-L&#39;App Store, pubblicazione/aggiornamemto App e TestFlight
-Sviluppare Interfacce
-Cos&#39;è la UI/UX
-Le interfacce User Firendly
-La User Experience
-Le interfacce NUI
-Historical Timeline
-Xib e Storyboard Vs SwiftUI
-Sviluppare Interfacce con UIKit via Storyboard:
-Come funziona un’App con UIKit
-Sviluppare Interfacce con SwiftUI SwiftUI
-Introduzione
-Come funziona un’App con SwiftUI
-L&#39;App Delegate e SceneDelegete in SwiftUI
-Struttura dei progetti
-SwiftUI basics (concetto alla base del sistema)
-
+Sviluppo Interfacce<br>
+Progettare e implementare UX avanzate<br>
+L&#39;App Store, pubblicazione/aggiornamemto App e TestFlight<br>
+Sviluppare Interfacce<br>
+Cos&#39;è la UI/UX<br>
+Le interfacce User Firendly<br>
+La User Experience<br>
+Le interfacce NUI<br>
+Historical Timeline<br>
+Xib e Storyboard Vs SwiftUI<br>
+Sviluppare Interfacce con UIKit via Storyboard:<br>
+Come funziona un’App con UIKit<br>
+Sviluppare Interfacce con SwiftUI SwiftUI<br>
+Introduzione<br>
+Come funziona un’App con SwiftUI<br>
+L&#39;App Delegate e SceneDelegete in SwiftUI<br>
+Struttura dei progetti<br>
+SwiftUI basics (concetto alla base del sistema)<br>
+<br>
 
 GIORNO 4
 
-Core Data
-Core Data: introduzione ai Database
-Core Data: database in locale + sync con CloudKit
-SQLite: database in locale
-Cosa sono i Web-Services
-SOAP Web Services
-Restful Web Services
-Networking e JSON: Introduzione e formato JSON
-Networking e JSON: Introduzione ai BaaS
-Networking e JSON: Tutorial (scaricare ed interp. un JSON)
-Tecniche di Debug
-Tecniche di Debug
-Memory Graph debugging
-Thread Sanitizer
-Main Thread Checker
-View debugging
-Testare l’App con il Testing e UI Testing
+Core Data<br>
+Core Data: introduzione ai Database<br>
+Core Data: database in locale + sync con CloudKit<br>
+SQLite: database in locale<br>
+Cosa sono i Web-Services<br>
+SOAP Web Services<br>
+Restful Web Services<br>
+Networking e JSON: Introduzione e formato JSON<br>
+Networking e JSON: Introduzione ai BaaS<br>
+Networking e JSON: Tutorial (scaricare ed interp. un JSON)<br>
+Tecniche di Debug<br>
+Memory Graph debugging<br>
+Thread Sanitizer<br>
+Main Thread Checker<br>
+View debugging<br>
+Testare l’App con il Testing e UI Testing<br>
 
 GIORNO 5
- LAB: Sviluppare un&#39;applicazione iOS con Swift con integrazione Servizi Rest
+LAB: Sviluppare un&#39;applicazione iOS con Swift con integrazione Servizi Rest<br>
 
 
 
