@@ -694,6 +694,96 @@ https://docs.swift.org/swift-book/documentation/the-swift-programming-language/o
 L'uso corretto di `!` e `?` è essenziale per gestire gli optional in modo sicuro e prevenire errori di runtime dovuti all'accesso a valori `nil`. È importante fare attenzione quando si utilizza `!` per forzare il disimballaggio, poiché può comportare problemi se l'optional è effettivamente `nil`.
 
 
+______________________________________________________________________________________________
+
+
+
+
+**1. @State:**
+   - `@State` viene utilizzato per dichiarare una variabile di stato all'interno di una vista.
+   - Le variabili contrassegnate con `@State` sono reattive, il che significa che qualsiasi cambiamento nel loro valore provoca automaticamente un aggiornamento dell'interfaccia utente.
+   - È spesso utilizzato per memorizzare piccoli dati di stato locali a una vista.
+
+Esempio:
+
+```swift
+struct ContentView: View {
+    @State private var count = 0
+    
+    var body: some View {
+        Button(action: {
+            count += 1
+        }) {
+            Text("Conteggio: \(count)")
+        }
+    }
+}
+```
+
+**2. @Binding:**
+   - `@Binding` viene utilizzato per passare un riferimento bidirezionale a una variabile tra le viste.
+   - Consente a una vista figlia di modificare una variabile definita in una vista genitore.
+   - Viene spesso utilizzato per passare dati da una vista all'altra e mantenerli sincronizzati.
+
+Esempio:
+
+```swift
+struct ParentView: View {
+    @State private var isChildViewVisible = false
+    
+    var body: some View {
+        ChildView(isVisible: $isChildViewVisible)
+    }
+}
+
+struct ChildView: View {
+    @Binding var isVisible: Bool
+    
+    var body: some View {
+        Button(action: {
+            isVisible.toggle()
+        }) {
+            Text("Mostra/Nascondi")
+        }
+    }
+}
+```
+
+**3. @ObservedObject:**
+   - `@ObservedObject` viene utilizzato per dichiarare una proprietà osservata di una classe personalizzata conformance a `ObservableObject`.
+   - Permette a una vista di osservare e reagire ai cambiamenti di stato di un oggetto osservabile.
+   - È spesso utilizzato per la gestione dei dati di modello in un'applicazione.
+
+Esempio:
+
+```swift
+class UserData: ObservableObject {
+    @Published var name = "Alice"
+}
+
+struct ContentView: View {
+    @ObservedObject var userData = UserData()
+    
+    var body: some View {
+        Text("Ciao, \(userData.name)!")
+    }
+}
+```
+
+In questo esempio, `@Published` è utilizzato nella classe `UserData` per contrassegnare la proprietà `name` come pubblicamente osservabile. La vista `ContentView` osserverà automaticamente le modifiche alla proprietà `name` e si aggiornerà di conseguenza.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
    
