@@ -775,6 +775,93 @@ In questo esempio, `@Published` è utilizzato nella classe `UserData` per contra
 
 
 
+____________________________________________________
+
+
+### Panoramica Generale:
+
+1. **Model-View-ViewModel (MVVM):**
+   - **Model:** Rappresenta i dati e la logica di business.
+   - **View:** Visualizza l'interfaccia utente e reagisce agli input.
+   - **ViewModel:** Gestisce lo stato della vista e comunica con il modello.
+
+2. **Observable Object:**
+   - SwiftUI utilizza il protocollo `ObservableObject` per creare oggetti che possono essere osservati per le modifiche di stato. Quando le proprietà di un oggetto `ObservableObject` cambiano, le viste associate vengono aggiornate automaticamente.
+
+### Esempio di Pseudo Codice per un'App di Elenco Attività:
+
+```swift
+// Modello rappresentante un'attività
+struct Task: Identifiable {
+    var id = UUID()
+    var title: String
+    var isCompleted: Bool = false
+}
+
+// ViewModel per gestire l'elenco delle attività
+class TaskViewModel: ObservableObject {
+    @Published var tasks: [Task] = []
+    
+    // Aggiungi una nuova attività
+    func addTask(title: String) {
+        let newTask = Task(title: title)
+        tasks.append(newTask)
+    }
+    
+    // Segna un'attività come completata
+    func toggleTaskCompletion(task: Task) {
+        if let index = tasks.firstIndex(where: { $0.id == task.id }) {
+            tasks[index].isCompleted.toggle()
+        }
+    }
+}
+
+// Vista principale dell'app
+struct ContentView: View {
+    @StateObject var viewModel = TaskViewModel()
+    @State private var newTaskTitle: String = ""
+    
+    var body: some View {
+        VStack {
+            // Campo di inserimento per una nuova attività
+            TextField("Nuova Attività", text: $newTaskTitle)
+                .padding()
+            
+            // Bottone per aggiungere un'attività
+            Button(action: {
+                viewModel.addTask(title: newTaskTitle)
+                newTaskTitle = ""
+            }) {
+                Text("Aggiungi Attività")
+            }
+            
+            // Lista delle attività
+            List(viewModel.tasks) { task in
+                // Vista di un'attività
+                HStack {
+                    Text(task.title)
+                    Spacer()
+                    Image(systemName: task.isCompleted ? "checkmark.circle.fill" : "circle")
+                        .onTapGesture {
+                            viewModel.toggleTaskCompletion(task: task)
+                        }
+                }
+            }
+        }
+        .padding()
+    }
+}
+```
+
+`Task` è il modello dei dati
+`TaskViewModel` è il ViewModel che gestisce l'elenco delle attività
+`ContentView` è la vista principale dell'app. 
+
+La vista principale utilizza `@StateObject` per creare un'istanza del ViewModel, e `@State` per mantenere lo stato locale per il campo di inserimento delle nuove attività.
+
+Nel codice sopra, le attività possono essere aggiunte inserendo un titolo nel campo di testo e premendo il pulsante "Aggiungi Attività". Le attività possono anche essere contrassegnate come completate o non completate toccando l'icona della casella di controllo accanto a ciascuna attività.
+
+Questo è solo un esempio di base per mostrarti come puoi iniziare con SwiftUI e MVVM pattern. Puoi estendere ulteriormente questo esempio aggiungendo funzionalità come la modifica e l'eliminazione delle attività.
 
 
 
