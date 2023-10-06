@@ -696,7 +696,7 @@ L'uso corretto di `!` e `?` è essenziale per gestire gli optional in modo sicur
 
 ______________________________________________________________________________________________
 
-
+## CONCETTI BASE SWIFT UI
 
 
 **1. @State:**
