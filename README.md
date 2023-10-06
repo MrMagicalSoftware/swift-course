@@ -864,7 +864,7 @@ Nel codice sopra, le attività possono essere aggiunte inserendo un titolo nel c
 Questo è solo un esempio di base per mostrarti come puoi iniziare con SwiftUI e MVVM pattern. Puoi estendere ulteriormente questo esempio aggiungendo funzionalità come la modifica e l'eliminazione delle attività.
 
 
-
+//https://www.youtube.com/watch?v=SOA0IT7sxvc&t=207s
 
 
 
